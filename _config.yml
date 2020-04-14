@@ -1,4 +1,4 @@
-remote_theme: "just-the-docs"
+theme: "just-the-docs"
 title: "Ansible Getting Started"
 source: "ansible-labs-summit2020/ansible-getting-started/"
 description: Summit 2020 Lab
