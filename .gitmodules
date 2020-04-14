@@ -2,6 +2,3 @@
 	path = ansible-labs-summit2020
 	url = https://github.com/cbolz/ansible-labs-summit2020.git
 	branch = jekyll-linklight
-[submodule "themes/hugo-theme-learn"]
-	path = themes/hugo-theme-learn
-	url = https://github.com/cbolz/hugo-theme-learn.git
