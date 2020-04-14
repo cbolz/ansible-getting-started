@@ -10,10 +10,8 @@ jobs:
     - uses: actions/checkout@v2
     - name: Checkout submodules
       uses: textbook/git-checkout-submodule-action@2.1.1
-    - name: debug output
-      run: ls -l
-    - name: remove what we don't need
-      run: rm -rfv ansible-labs-summit2020/ansible-tower-advanced ansible-labs-summit2020/ansible-tower-getting-started
+    - name: only keep what we need
+      run: cp -rv ansible-labs-summit2020/ansible-getting-started source
 
     # Standard usage
     - uses:  helaili/jekyll-action@2.0.0
