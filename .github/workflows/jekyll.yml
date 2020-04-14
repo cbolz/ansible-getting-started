@@ -11,7 +11,7 @@ jobs:
     - name: Checkout submodules
       uses: textbook/git-checkout-submodule-action@2.1.1
     - name: only keep what we need
-      run: sudo rm -rv $GITHUB_WORKSPACE/ansible-labs-summit2020/ansible-tower-getting-started
+      run: sudo rm -rv $GITHUB_WORKSPACE/ansible-labs-summit2020/ansible-tower-getting-started $GITHUB_WORKSPACE/ansible-labs-summit2020/ansible-tower-advanced
 
     # Standard usage
     - uses:  helaili/jekyll-action@2.0.0
