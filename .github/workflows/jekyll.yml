@@ -1,4 +1,4 @@
-name: Testing the GitHub Pages publication
+name: Jekyll Deployment
 
 on:
   push
@@ -13,7 +13,7 @@ jobs:
     - name: debug output
       run: ls -l
     - name: remove what we don't need
-      run: rm -rf github/workspace/ansible-labs-summit2020/ansible-tower-advanced github/workspace/ansible-labs-summit2020/ansible-tower-getting-started
+      run: rm -rfv ansible-labs-summit2020/ansible-tower-advanced ansible-labs-summit2020/ansible-tower-getting-started
 
     # Standard usage
     - uses:  helaili/jekyll-action@2.0.0
