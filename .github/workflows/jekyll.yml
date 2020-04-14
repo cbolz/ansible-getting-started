@@ -11,11 +11,9 @@ jobs:
     - name: Checkout submodules
       uses: textbook/git-checkout-submodule-action@2.1.1
     - name: only keep what we need
-      run: cp -rv ansible-labs-summit2020/ansible-getting-started source
+      run: rm -rv ansible-labs-summit2020/ansible-tower-getting-started
 
     # Standard usage
     - uses:  helaili/jekyll-action@2.0.0
       env:
         JEKYLL_PAT: ${{ secrets.JEKYLL_PAT }}
-      with:
-        jekyll_src: 'source'
