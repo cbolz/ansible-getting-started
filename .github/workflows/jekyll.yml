@@ -10,8 +10,8 @@ jobs:
     - uses: actions/checkout@v2
     - name: Checkout submodules
       uses: textbook/git-checkout-submodule-action@2.1.1
-    - name: only keep what we need
-      run: cp -rv ansible-labs-summit2020/ansible-getting-started source
+      #    - name: only keep what we need
+      #      run: cp -rv ansible-labs-summit2020/ansible-getting-started source
 
     # Standard usage
     - uses:  helaili/jekyll-action@2.0.0
