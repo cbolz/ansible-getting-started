@@ -1,0 +1,41 @@
+baseurl = "https://labs.jung-christian.de/"
+contentdir    = "ansible-labs-summit2020"
+layoutdir     = "layouts"
+publishdir    = "public"
+
+title = "Christian's Labs"
+canonifyurls = true
+paginate = 10
+
+# Change the default theme to be use when building the site with Hugo
+theme = "hugo-theme-learn"
+
+# For search functionality
+[outputs]
+home = [ "HTML", "RSS", "JSON"]
+
+[author]
+  name = "Christian Jung"
+    
+[params]
+  DateForm = "Mon, Jan 2, 2006"
+  Description = "Labs and tutorials related to CloudForms"
+  Author = "Christian Jung"
+  email = "blog@jung-christian.de"
+  Ganalytics = "XX-00000000-0"
+  themeVariant = "blue"
+              
+[[params.social]]
+  title = "github"
+  url = "https://github.com/cbolz"
+[[params.social]]
+  title = "twitter"
+  url = "https://twitter.com/CJungCloud"
+[[params.social]]
+  title = "gitlab"
+  url = "https://gitlab.com/cjung"
+
+[[menu.shortcuts]] 
+name = "<i class='fas fa-home'></i> Homepage"
+url = "https://www.jung-christian.de"
+weight = 10
