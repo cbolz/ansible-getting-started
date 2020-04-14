@@ -2,4 +2,5 @@ remote_theme: "pmarsceill/just-the-docs"
 theme: "just-the-docs"
 title: "Ansible Getting Started"
 source: "source"
+color_scheme: "dark"
 description: Summit 2020 Lab
