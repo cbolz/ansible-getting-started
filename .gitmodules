@@ -1,0 +1,4 @@
+[submodule "ansible-labs-summit2020"]
+	path = ansible-labs-summit2020
+	url = https://github.com/cbolz/ansible-labs-summit2020.git
+	branch = jekyll-linklight
