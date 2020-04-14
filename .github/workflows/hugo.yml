@@ -40,3 +40,10 @@ jobs:
 
     - name: Hugo Actions
       uses: srt32/hugo-action@v0.0.3
+
+    - name: push new docs folder
+      run: |
+        cd docs
+        git add .
+        git commit -m "triggered by github action"
+        git push
